@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Olaonipekun | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          animation: {
+            fadeInUp: 'fadeInUp 0.8s ease-out',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white dark:bg-black text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+
+  <!-- Dark mode toggle -->
+  <div class="p-4 text-right">
+    <button onclick="document.documentElement.classList.toggle('dark')" class="text-sm border px-4 py-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800">
+      Toggle Theme
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="max-w-4xl mx-auto px-6 py-12 animate-fadeInUp">
+    <h1 class="text-4xl font-bold mb-2">Samuel Olaonipekun</h1>
+    <p class="text-lg text-gray-700 dark:text-gray-300">Python Developer & Computer Science Intern</p>
+    <p class="text-sm mt-2 text-gray-500 dark:text-gray-400">Currently exploring backend development, data automation & crypto testnets.</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto px-6 py-8 border-t border-gray-200 dark:border-gray-700 animate-fadeInUp">
+    <h2 class="text-xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+      I’m a 300-level Computer Science student at FUNAAB with a strong passion for backend systems, Python, and real-world problem solving. I build small tools, teach programming, and work on crypto testnet tasks in my spare time.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="max-w-4xl mx-auto px-6 py-8 border-t border-gray-200 dark:border-gray-700 animate-fadeInUp">
+    <h2 class="text-xl font-semibold mb-6">Projects</h2>
+    <div class="space-y-6">
+      <div>
+        <h3 class="text-lg font-bold">Quote Scraper</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Scrapes quotes and saves them in SQLite using BeautifulSoup.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">Ticket Booking App</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Simple CLI-based booking app using OOP and file handling.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">Logbook PDF Generator</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Generates internship logbook PDFs from JSON input.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">Address Book App</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Stores and manages contact info in CSV through a CLI tool.</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold">MemeCoin Mascot Art</h3>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Hand-sketched and AI-upgraded design used in a meme contest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="max-w-4xl mx-auto px-6 py-8 border-t border-gray-200 dark:border-gray-700 animate-fadeInUp">
+    <h2 class="text-xl font-semibold mb-4">Skills</h2>
+    <ul class="flex flex-wrap gap-2 text-sm">
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">Python</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">SQLite</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">BeautifulSoup</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">Git</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">JSON</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">File I/O</li>
+      <li class="bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded">CLI Tools</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section class="max-w-4xl mx-auto px-6 py-12 border-t border-gray-200 dark:border-gray-700 animate-fadeInUp">
+    <h2 class="text-xl font-semibold mb-2">Contact</h2>
+    <p class="text-sm mb-2">📧 <a href="mailto:samuel@example.com" class="text-blue-600 dark:text-blue-400">samuel@example.com</a></p>
+    <p class="text-sm">🐙 <a href="https://github.com/samueldev" class="text-blue-600 dark:text-blue-400">github.com/samueldev</a></p>
+  </section>
+
+</body>
+</html>
